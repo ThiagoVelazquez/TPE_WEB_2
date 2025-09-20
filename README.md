@@ -9,5 +9,8 @@ El proyecto es un sitio web de un cine que se caracteriza por tener salas especi
 ## DESCRIPCIÓN: 
 Sitio web del cine donde el usuario puede consultar las funciones que hay y en qué salas se dan
 
+## DER: 
+El diagrama muestra las entidades Sala y Función (relación 1 a N)
 
-
+*Una sala está asociada a muchas funciones
+*Cada función se realiza únicamente en una sala
