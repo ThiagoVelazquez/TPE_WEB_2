@@ -12,5 +12,5 @@ Sitio web del cine donde el usuario puede consultar las funciones que hay y en q
 ## DER: 
 El diagrama muestra las entidades Sala y Función (relación 1 a N)
 
-*Una sala está asociada a muchas funciones
-*Cada función se realiza únicamente en una sala
+* Una sala está asociada a muchas funciones
+* Cada función se realiza únicamente en una sala
