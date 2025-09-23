@@ -14,3 +14,5 @@ El diagrama muestra las entidades Sala y Función (relación 1 a N)
 
 * Una sala está asociada a muchas funciones
 * Cada función se realiza únicamente en una sala
+
+![image alt](https://github.com/ThiagoVelazquez/TPE_WEB_2/blob/e0d8f80182bccdbcf8ea5ddc11f65cc0c4a25349/DER.jpeg)
