@@ -1,3 +1,5 @@
+# Segunda Entrega - OUTDATED hasta la parte de la imagen - Bajar hasta la parte de la segunda entrega
+
 # TPE_WEB_2
 TPE de Web 2 TUDAI
 ## INTEGRANTES: 
