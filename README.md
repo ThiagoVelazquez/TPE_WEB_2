@@ -47,7 +47,7 @@ Sistema completo de gestión de funciones de cine con panel de administración, 
 - Usuario: `webadmin`
 - Contraseña: `admin`
 - Ir a la sección "Login" en el menú superior
-- El sitio tiene un ayudamemorias con estos datos para logearnos como admin que de ser un sitio real removeríamos obviamente
+- El sitio tiene un ayuda memoria con estos datos para logearnos como admin que de ser un sitio real removeríamos obviamente
 
 ### Funcionalidades
 
