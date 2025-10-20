@@ -1,0 +1,16 @@
+<?php if (!isset($f)): echo "<p>Función no encontrada.</p>"; return; endif; ?>
+
+<article>
+    <h2><?php echo htmlspecialchars($f->nombre); ?></h2>
+    <p><strong>ID:</strong> <?php echo $f->id; ?></p>
+    <p><strong>Duración:</strong> <?php echo htmlspecialchars($f->duracion); ?> Minutos</p>
+    <p><strong>Horarios:</strong> <?php echo nl2br(htmlspecialchars($f->horarios)); ?></p>
+    <p><strong>Sala relacionada:</strong>
+        <?php if (isset($f->codigo_sala)): ?>
+            Código: <?php echo htmlspecialchars($f->codigo_sala); ?>
+        <?php else: ?>
+            No asignada
+        <?php endif; ?>
+    </p>
+    <p><a href="index.php?action=funciones">Volver al listado</a></p>
+</article>

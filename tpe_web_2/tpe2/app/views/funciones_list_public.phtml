@@ -1,0 +1,16 @@
+<h2>Funciones Disponibles</h2>
+<?php if (empty($funciones)): ?>
+    <p>No hay funciones disponibles.</p>
+<?php else: ?>
+    <ul>
+    <?php foreach ($funciones as $f): ?>
+        <li>
+            <a href="index.php?action=funcion&id=<?php echo $f->id; ?>">
+                <?php echo htmlspecialchars($f->nombre); ?>
+            </a>
+            - Duración: <?php echo htmlspecialchars($f->duracion); ?> minutos
+            - Sala: <?php echo htmlspecialchars($f->codigo_sala ?? 'N/A'); ?>
+        </li>
+    <?php endforeach; ?>
+    </ul>
+<?php endif; ?>

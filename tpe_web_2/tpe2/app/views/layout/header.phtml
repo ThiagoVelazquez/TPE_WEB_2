@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <base href="<?php echo BASE_URL ?>">
+    <title>tpe - funciones y salas</title>
+    <style>
+        body { 
+            font-family: Arial, Helvetica, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #000000;
+            color: #ffff00;
+        }
+        header { 
+            background: #ffff00; 
+            color: #000000; 
+            padding: 12px 16px; 
+            border-bottom: 2px solid #ffff00;
+        }
+        header a { 
+            color: #000000; 
+            margin-left: 10px; 
+            text-decoration: none; 
+            font-weight: bold;
+        }
+        header a:hover {
+            text-decoration: underline;
+            color: #333333;
+        }
+        main { 
+            padding: 16px; 
+            background-color: #000000;
+        }
+        nav { 
+            margin-top: 8px; 
+        }
+        .container { 
+            max-width: 1000px; 
+            margin: 0 auto; 
+        }
+        table {
+            border: 1px solid #ffff00;
+            color: #ffff00;
+        }
+        th, td {
+            border: 1px solid #ffff00;
+            padding: 6px;
+        }
+        a {
+            color: #ffff00;
+        }
+        a:hover {
+            color: #ffffff;
+        }
+        input, select, textarea {
+            background-color: #000000;
+            color: #ffff00;
+            border: 1px solid #ffff00;
+            padding: 4px;
+        }
+        button {
+            background-color: #000000;
+            color: #ffff00;
+            border: 1px solid #ffff00;
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ffff00;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <strong>TPE WEB 2</strong>
+        <nav>
+            <a href="<?php echo BASE_URL; ?>home">Inicio</a> |
+            <a href="<?php echo BASE_URL; ?>funciones">Funciones (público)</a> |
+            <a href="<?php echo BASE_URL; ?>salas">Salas</a>
+            <?php if (isset($user)): ?>
+                | <a href="<?php echo BASE_URL; ?>admin_funciones">Admin funciones</a>
+                | <a href="<?php echo BASE_URL; ?>admin_salas">Admin salas</a>
+                | <a href="<?php echo BASE_URL; ?>logout">Cerrar sesión (<?php echo htmlspecialchars($user->username); ?>)</a>
+            <?php else: ?>
+                | <a href="<?php echo BASE_URL; ?>login">Login</a>
+            <?php endif; ?>
+        </nav>
+    </div>
+</header>
+<main class="container">

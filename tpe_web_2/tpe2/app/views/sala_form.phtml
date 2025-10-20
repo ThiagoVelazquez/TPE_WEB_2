@@ -1,0 +1,29 @@
+<?php
+$isEdit = isset($sala) && !empty($sala);
+$actionUrl = $isEdit ? BASE_URL . "admin_sala_edit/" . $sala->id : BASE_URL . "admin_sala_add";
+?>
+
+<h2><?php echo $isEdit ? "Editar Sala" : "Agregar Sala"; ?></h2>
+
+<?php if (!empty($error)): ?>
+    <p style="color:red"><?php echo $error; ?></p>
+<?php endif; ?>
+
+<form action="<?php echo $actionUrl; ?>" method="POST">
+    <div>
+        <label>Código Sala:</label><br/>
+        <input type="number" name="codigo_sala" required value="<?php echo $isEdit ? htmlspecialchars($sala->codigo_sala) : ''; ?>">
+    </div>
+    <div>
+        <label>Capacidad Máxima:</label><br/>
+        <input type="number" name="cantidad_max_personas" required value="<?php echo $isEdit ? htmlspecialchars($sala->cantidad_max_personas) : ''; ?>">
+    </div>
+    <div>
+        <label>Precio:</label><br/>
+        <input type="number" name="precio" value="<?php echo $isEdit ? htmlspecialchars($sala->precio) : '0'; ?>">
+    </div>
+    <div>
+        <button type="submit"><?php echo $isEdit ? "Actualizar" : "Crear"; ?></button>
+        <a href="<?php echo BASE_URL; ?>admin_salas">Cancelar</a>
+    </div>
+</form>

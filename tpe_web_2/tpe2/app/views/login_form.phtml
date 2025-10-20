@@ -1,0 +1,19 @@
+<h2>Iniciar sesión (administrador)</h2>
+<?php if (!empty($error)): ?>
+    <p style="color:red"><?php echo $error; ?></p>
+<?php endif; ?>
+
+<form action="<?php echo BASE_URL; ?>do_login" method="POST">
+    <div>
+        <label>Usuario:</label><br/>
+        <input type="text" name="nombre_usuario" required>
+    </div>
+    <div>
+        <label>Contraseña:</label><br/>
+        <input type="password" name="password" required>
+    </div>
+    <div style="margin-top:10px;">
+        <button type="submit">entrar</button>
+    </div>
+    <p>Usuario: <strong>webadmin</strong> / Contraseña: <strong>admin</strong></p>
+</form>

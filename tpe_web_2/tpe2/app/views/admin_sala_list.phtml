@@ -1,0 +1,32 @@
+<h2>Administrar Salas</h2>
+<a href="<?php echo BASE_URL; ?>admin_sala_add">Agregar Sala</a>
+
+<?php if (empty($salas)): ?>
+    <p>No hay salas disponibles.</p>
+<?php else: ?>
+    <table border="1" cellpadding="6">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Código Sala</th>
+                <th>Capacidad Máx</th>
+                <th>Precio</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php foreach ($salas as $s): ?>
+            <tr>
+                <td><?php echo $s->id; ?></td>
+                <td><?php echo htmlspecialchars($s->codigo_sala); ?></td>
+                <td><?php echo htmlspecialchars($s->cantidad_max_personas); ?></td>
+                <td><?php echo htmlspecialchars($s->precio); ?></td>
+                <td>
+                    <a href="<?php echo BASE_URL; ?>admin_sala_edit/<?php echo $s->id; ?>">Editar</a> |
+                    <a href="<?php echo BASE_URL; ?>admin_sala_delete/<?php echo $s->id; ?>" onclick="return confirm('Eliminar sala?')">Eliminar</a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+<?php endif; ?>

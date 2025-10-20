@@ -1,0 +1,23 @@
+<h2>Funciones de la Sala <?php echo htmlspecialchars($sala->codigo_sala); ?></h2>
+
+<p><strong>Capacidad:</strong> <?php echo htmlspecialchars($sala->cantidad_max_personas); ?> personas</p>
+<p><strong>Precio:</strong> $<?php echo htmlspecialchars($sala->precio); ?></p>
+
+<?php if (empty($funciones)): ?>
+    <p>No hay funciones disponibles para esta sala.</p>
+<?php else: ?>
+    <ul>
+    <?php foreach ($funciones as $f): ?>
+        <li>
+            <a href="<?php echo BASE_URL; ?>funcion/<?php echo $f->id; ?>">
+                <?php echo htmlspecialchars($f->nombre); ?>
+            </a>
+            - Duración: <?php echo htmlspecialchars($f->duracion); ?> minutos
+            - Horarios: <?php echo htmlspecialchars($f->horarios); ?>
+        </li>
+    <?php endforeach; ?>
+    </ul>
+<?php endif; ?>
+
+<p><a href="<?php echo BASE_URL; ?>salas">Volver al listado de salas</a></p>
+<p><a href="<?php echo BASE_URL; ?>funciones">Ver todas las funciones</a></p>

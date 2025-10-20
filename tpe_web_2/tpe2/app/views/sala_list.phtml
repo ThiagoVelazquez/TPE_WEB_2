@@ -1,0 +1,19 @@
+<h2>Salas disponibles</h2>
+<?php if (empty($salas)): ?>
+    <p>No hay salas cargadas.</p>
+<?php else: ?>
+    <ul>
+    <?php foreach ($salas as $s): ?>
+        <li>
+            <strong>Sala id:</strong> <?php echo $s->id; ?> —
+            <strong>Código:</strong> 
+            <a href="<?php echo BASE_URL; ?>funciones_por_sala/<?php echo $s->id; ?>">
+                <?php echo htmlspecialchars($s->codigo_sala); ?>
+            </a> —
+            <strong>Capacidad:</strong> <?php echo htmlspecialchars($s->cantidad_max_personas); ?> —
+            <strong>Precio:</strong> <?php echo htmlspecialchars($s->precio); ?>
+        </li>
+    <?php endforeach; ?>
+    </ul>
+    <p><a href="<?php echo BASE_URL; ?>funciones">ver todas las funciones</a></p>
+<?php endif; ?>

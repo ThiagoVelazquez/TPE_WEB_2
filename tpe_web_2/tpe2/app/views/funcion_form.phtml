@@ -1,0 +1,41 @@
+<?php
+$isEdit = isset($funcion) && !empty($funcion);
+$actionUrl = $isEdit ? BASE_URL . "admin_funcion_edit/" . $funcion->id : BASE_URL . "admin_funcion_add";
+?>
+
+<h2><?php echo $isEdit ? "editar función" : "agregar función"; ?></h2>
+
+<?php if (!empty($error)): ?>
+    <p style="color:red"><?php echo $error; ?></p>
+<?php endif; ?>
+
+<form action="<?php echo $actionUrl; ?>" method="POST">
+    <div>
+        <label>Nombre:</label><br/>
+        <input type="text" name="nombre" required value="<?php echo $isEdit ? htmlspecialchars($funcion->nombre) : ''; ?>">
+    </div>
+    <div>
+        <label>Sala:</label><br/>
+        <select name="id_sala" required>
+            <option value="">-- Seleccionar sala --</option>
+            <?php foreach ($salas as $s): ?>
+                <?php $selected = $isEdit && ($s->id == $funcion->id_sala) ? 'selected' : ''; ?>
+                <option value="<?php echo $s->id; ?>" <?php echo $selected; ?>>
+                    <?php echo htmlspecialchars("id {$s->id} - código {$s->codigo_sala} (cap {$s->cantidad_max_personas})"); ?>
+                </option>
+            <?php endforeach; ?>
+        </select>
+    </div>
+    <div>
+        <label>Duración (minutos):</label><br/>
+        <input type="number" name="duracion" required value="<?php echo $isEdit ? htmlspecialchars($funcion->duracion) : ''; ?>">
+    </div>
+    <div>
+        <label>Horarios:</label><br/>
+        <input type="number" name="horarios" required value="<?php echo $isEdit ? htmlspecialchars($funcion->horarios) : ''; ?>">
+    </div>
+    <div>
+        <button type="submit"><?php echo $isEdit ? "actualizar" : "crear"; ?></button>
+        <a href="<?php echo BASE_URL; ?>admin_funciones">cancelar</a>
+    </div>
+</form>

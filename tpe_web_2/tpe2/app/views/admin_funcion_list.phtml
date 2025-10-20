@@ -1,0 +1,34 @@
+<h2>administrar funciones</h2>
+<a href="<?php echo BASE_URL; ?>admin_funcion_add">Agregar función</a>
+
+<?php if (empty($funciones)): ?>
+    <p>No hay funciones disponibles.</p>
+<?php else: ?>
+    <table border="1" cellpadding="6">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Nombre</th>
+                <th>Sala código</th>
+                <th>Duración</th>
+                <th>Horarios</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php foreach ($funciones as $f): ?>
+            <tr>
+                <td><?php echo $f->id; ?></td>
+                <td><?php echo htmlspecialchars($f->nombre); ?></td>
+                <td><?php echo htmlspecialchars($f->codigo_sala ?? ''); ?></td>
+                <td><?php echo htmlspecialchars($f->duracion); ?></td>
+                <td><?php echo htmlspecialchars($f->horarios); ?></td>
+                <td>
+                    <a href="<?php echo BASE_URL; ?>admin_funcion_edit/<?php echo $f->id; ?>">editar</a> |
+                    <a href="<?php echo BASE_URL; ?>admin_funcion_delete/<?php echo $f->id; ?>" onclick="return confirm('eliminar función?')">eliminar</a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+<?php endif; ?>

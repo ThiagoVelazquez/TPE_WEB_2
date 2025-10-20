@@ -1,0 +1,12 @@
+<?php if (!$funcion): ?>
+    <p>Función no encontrada.</p>
+<?php else: ?>
+    <article>
+        <h2><?php echo htmlspecialchars($funcion->nombre); ?></h2>
+        <p><strong>id:</strong> <?php echo $funcion->id; ?></p>
+        <p><strong>Duración:</strong> <?php echo htmlspecialchars($funcion->duracion); ?> Minutos</p>
+        <p><strong>Horarios:</strong> <?php echo htmlspecialchars($funcion->horarios); ?></p>
+        <p><strong>Sala:</strong> Código: <?php echo htmlspecialchars($funcion->codigo_sala); ?></p>
+        <p><a href="<?php echo BASE_URL; ?>funciones">volver al listado</a></p>
+    </article>
+<?php endif; ?>
