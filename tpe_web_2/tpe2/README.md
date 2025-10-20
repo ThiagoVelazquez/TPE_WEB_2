@@ -1,0 +1,53 @@
+# Segunda Entrega - Sistema Completo
+
+Sistema completo de gestión de funciones de cine con panel de administración, desarrollado en PHP con arquitectura MVC.
+
+### Configuración de la base de datos
+
+1. Abre phpMyAdmin en tu navegador
+2. Crea una nueva base de datos llamada `tpe1`
+3. Selecciona la base de datos `tpe1`
+4. Haz clic en la pestaña **Importar**
+5. Haz clic en **Seleccionar archivo** y elige el archivo `tpe1.sql` de este proyecto
+6. Presiona **Continuar** para importar las tablas y datos
+
+### Configuración del sitio
+
+1. Coloca los archivos del proyecto en el directorio web de Apache (htdocs)
+2. El sistema configurará automáticamente la conexión a la base de datos
+3. Las tablas necesarias se crearán automáticamente si no existen
+4. El usuario administrador se genera automáticamente al primer acceso
+
+### Acceso al sistema
+
+**Acceso público:**
+- Navega a la URL del sitio para ver las funciones y salas disponibles
+
+**Acceso administrador:**
+- Usuario: `webadmin`
+- Contraseña: `admin`
+- Ir a la sección "Login" en el menú superior
+- Igualmente el sitio tiene un ayuda memoria con estos datos para logearnos como admin que de ser un sitio real obviamente removeríamos
+
+### Funcionalidades
+
+**Públicas:**
+- Listado de todas las funciones
+- Detalle individual de cada función
+- Listado de todas las salas
+- Funciones filtradas por sala específica
+
+**Administración:**
+- Gestión completa de funciones (agregar, editar, eliminar)
+- Gestión completa de salas (agregar, editar, eliminar)
+- Sistema de autenticación seguro
+- Protección de rutas administrativas
+
+### Estructura de la base de datos
+
+- **salas**: Almacena la información de las salas (categorías)
+- **funciones**: Almacena la información de las funciones (ítems)
+- **usuarios**: Almacena los usuarios administradores del sistema
+
+## IMAGEN DE LA DATABASE - SEGUNDA ENTREGA:
+![Image](https://github.com/user-attachments/assets/028dd15f-0eea-49cf-b8b5-4531a3064ffb)
