@@ -1,6 +1,4 @@
-### Primera Entrega - Bajar hasta la parte de la segunda entrega
-
-# TPE_WEB_2
+# TPE_WEB_2 - Primera Entrega - Bajar hasta la parte de la segunda entrega
 TPE de Web 2 TUDAI
 ## INTEGRANTES: 
 Thiago Velázquez Giuliani (velazquezgiulianithiago@gmail.com) y Juan Ignacio Arballo (arballojuancho@gmail.com)
