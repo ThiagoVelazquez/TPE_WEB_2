@@ -35,7 +35,7 @@ Sistema completo de gestión de funciones de cine con panel de administración, 
 
 ### Configuración del sitio
 
-1. Coloca los archivos del proyecto en el directorio web de Apache (htdocs o www)
+1. Coloca los archivos del proyecto en el directorio web de Apache (htdocs)
 2. El sistema configurará automáticamente la conexión a la base de datos
 3. Las tablas necesarias se crearán automáticamente si no existen
 4. El usuario administrador se genera automáticamente al primer acceso
