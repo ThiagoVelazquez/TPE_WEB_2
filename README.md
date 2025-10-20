@@ -15,7 +15,7 @@ El diagrama muestra las entidades Sala y Función (relación 1 a N)
 * Una sala está asociada a muchas funciones
 * Cada función se realiza únicamente en una sala
 
-## IMAGEN PRIMERA ENTREGA (OUTDATED):
+## IMAGEN DE LA DATABASE - PRIMERA ENTREGA (OUTDATED):
 ![image alt](https://github.com/ThiagoVelazquez/TPE_WEB_2/blob/e0d8f80182bccdbcf8ea5ddc11f65cc0c4a25349/DER.jpeg)
 
 # Segunda Entrega - Sistema Completo
@@ -69,5 +69,5 @@ Sistema completo de gestión de funciones de cine con panel de administración, 
 - **funciones**: Almacena la información de las funciones (ítems)
 - **usuarios**: Almacena los usuarios administradores del sistema
 
-## IMAGEN SEGUNDA ENTREGA:
+## IMAGEN DE LA DATABASE - SEGUNDA ENTREGA:
 ![Image](https://github.com/user-attachments/assets/028dd15f-0eea-49cf-b8b5-4531a3064ffb)
