@@ -70,3 +70,6 @@ Sistema completo de gestión de funciones de cine con panel de administración, 
 - **salas**: Almacena la información de las salas (categorías)
 - **funciones**: Almacena la información de las funciones (ítems)
 - **usuarios**: Almacena los usuarios administradores del sistema
+
+## IMAGEN SEGUNDA ENTREGA:
+![Image](https://github.com/user-attachments/assets/028dd15f-0eea-49cf-b8b5-4531a3064ffb)
