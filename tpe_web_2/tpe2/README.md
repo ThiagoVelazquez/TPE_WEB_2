@@ -49,5 +49,5 @@ Sistema completo de gestión de funciones de cine con panel de administración, 
 - **funciones**: Almacena la información de las funciones (ítems)
 - **usuarios**: Almacena los usuarios administradores del sistema
 
-## IMAGEN DE LA DATABASE - SEGUNDA ENTREGA:
+## IMAGEN DER - SEGUNDA ENTREGA:
 ![Image](https://github.com/user-attachments/assets/028dd15f-0eea-49cf-b8b5-4531a3064ffb)
