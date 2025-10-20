@@ -1,4 +1,4 @@
-# Primera Entrega - OUTDATED hasta la parte de la imagen - Bajar hasta la parte de la segunda entrega
+# Primera Entrega - Bajar hasta la parte de la segunda entrega
 
 # TPE_WEB_2
 TPE de Web 2 TUDAI
@@ -17,6 +17,7 @@ El diagrama muestra las entidades Sala y Función (relación 1 a N)
 * Una sala está asociada a muchas funciones
 * Cada función se realiza únicamente en una sala
 
+## IMAGEN PRIMERA ENTREGA (OUTDATED):
 ![image alt](https://github.com/ThiagoVelazquez/TPE_WEB_2/blob/e0d8f80182bccdbcf8ea5ddc11f65cc0c4a25349/DER.jpeg)
 
 # Segunda Entrega - Sistema Completo
