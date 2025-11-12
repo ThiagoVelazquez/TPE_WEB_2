@@ -18,8 +18,8 @@ Este proyecto usa una librería interna para rutear peticiones ubicada en libs/r
 
 ## Endpoints
 
-GET /api/funciones - Listar todas las funciones
-### Parámetros opcionales:
+### GET /api/funciones - Listar todas las funciones
+Parámetros opcionales:
 - sort - Ordenar por campo (id, nombre, duracion, horarios, id_sala)
 - order - Dirección del orden (asc/desc)
 - page - Número de página para paginado
@@ -27,22 +27,22 @@ GET /api/funciones - Listar todas las funciones
 - filterField - Campo para filtrar (id_sala, nombre, duracion)
 - filterValue - Valor del filtro
 
-### Ejemplos:
+Ejemplos:
 GET /api/funciones?sort=nombre&order=desc
 GET /api/funciones?page=1&limit=5
 GET /api/funciones?filterField=id_sala&filterValue=6
 
-GET /api/funciones/:id - Obtener una función específica por ID
-### Ejemplo:
+### GET /api/funciones/:id - Obtener una función específica por ID
+Ejemplo:
 GET /api/funciones/7
 
-GET /api/auth/login - Obtener token de autenticación
-### Ejemplo:
+### GET /api/auth/login - Obtener token de autenticación
+Ejemplo:
 GET /api/auth/login
 Headers: Authorization: Basic YWRtaW46cGFzc3dvcmQ=
 
-POST /api/funciones - Crear nueva función (requiere token)
-### Ejemplo:
+### POST /api/funciones - Crear nueva función (requiere token)
+Ejemplo:
 POST /api/funciones
 Headers: 
   Authorization: Bearer [token]
@@ -55,8 +55,8 @@ Body: {
   "token": "[token]"
 }
 
-PUT /api/funciones/:id - Actualizar función existente (requiere token)
-### Ejemplo:
+### PUT /api/funciones/:id - Actualizar función existente (requiere token)
+Ejemplo:
 PUT /api/funciones/11
 Headers: 
   Authorization: Bearer [token]
@@ -69,8 +69,8 @@ Body: {
   "token": "[token]"
 }
 
-DELETE /api/funciones/:id - Eliminar función (requiere token)
-### Ejemplo:
+### DELETE /api/funciones/:id - Eliminar función (requiere token)
+Ejemplo:
 DELETE /api/funciones/11
 Headers: Authorization: Bearer [token]
 
